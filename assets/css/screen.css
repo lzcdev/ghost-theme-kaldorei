@@ -1403,7 +1403,11 @@ body.nav-opened .site-wrapper {
     display: block;
     float: left;
 }
-
+.keep-on-record {
+    display: block;
+    float: left;
+    margin-left: 20px;
+}
 /* ==========================================================================
    11. Layout
    ========================================================================== */
