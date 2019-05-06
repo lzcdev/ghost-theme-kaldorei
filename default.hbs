@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="{{@site.lang}}">
 
 <head>
@@ -26,21 +25,29 @@
 
 <body class="{{body_class}} nav-closed" data-spy="scroll" data-target="#tocScrollspy">
 
-    <div class="site-wrapper">
+  <div class="site-wrapper">
 
-        {{! Everything else gets inserted here }}
-        {{{body}}}
+    {{! Everything else gets inserted here }}
+    {{{body}}}
 
-        <footer class="site-footer clearfix">
-            <div class="footer-meta container">
-                <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-                <section class="keep-on-record"><a href="http://www.miitbeian.gov.cn/">浙ICP备18054026号</a></section>
-                <section class="keep-on-record"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802009598">浙公网安备 33010802009598号</a></section>
-                <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a>, Theme <a href="https://github.com/xiaoluoboding/kaldorei">Kaldorei</a></section>
-            </div>
-        </footer>
+    <footer class="site-footer clearfix">
+      <div class="footer-meta container">
+        <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+        <section class="keep-on-record"><a href="http://www.miitbeian.gov.cn/">浙ICP备18054026号</a>
 
-    </div>
+<a
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802009598">浙公安网备 33010802009598号</a> Proudly published with <a href="https://ghost.org">Ghost</a>, Theme <a
+            href="https://github.com/xiaoluoboding/kaldorei">Kaldorei</a>
+        </section>
+   <!--      <section class="keep-on-record"><a
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802009598">浙公安网备 33010802009598号</a>
+        </section> -->
+   <!--      <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a>, Theme <a
+            href="https://github.com/xiaoluoboding/kaldorei">Kaldorei</a></section> -->
+      </div>
+    </footer>
+
+  </div>
 
   {{!-- Search box --}}
   {{>"search"}}
