@@ -46,5 +46,10 @@
   "Read": "Read",
   "more posts": "more posts",
   "by this author": "by this author",
+<<<<<<< HEAD
   "toc": "Table of contents"
+=======
+  "toc": "Table of contents",
+  "Search": "Search"
+>>>>>>> upstream/master
 }

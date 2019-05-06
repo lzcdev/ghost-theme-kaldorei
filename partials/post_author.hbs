@@ -1,5 +1,6 @@
 {{! Everything inside the #author tags pulls data from the author }}
 {{#primary_author}}
+<<<<<<< HEAD
 {{#if profile_image}}
 <figure class="author-image">
     <a class="img" href="{{url}}" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></a>
@@ -7,3 +8,34 @@
 {{/if}}
 {{/primary_author}}
 
+=======
+    {{#if profile_image}}
+        <figure class="author-image">
+            <a class="img" href="{{url}}" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></a>
+        </figure>
+    {{/if}}
+{{/primary_author}}
+<figure class="author-info">
+    <section class="author-info-title">
+        <span class="pull-right">{{t "Publish At"}}：<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time></span>
+        {{#primary_author}}
+        <span>{{t "Author"}}：{{name}}</span>
+    </section>
+    <section class="author-info-content">
+        {{#if bio}}
+            <span class="author-info-bio">{{bio}}</span>
+        {{else}}
+            <p class="author-info-bio-placeholder">{{t "Read"}} <a href="{{url}}">{{t "more posts"}}</a> {{t "by this author"}}</p>
+        {{/if}}
+        <section class="author-info-social">
+            {{!-- {{#if website}}<a href="{{website}}" class="author-info-social-website">我的站点</a>{{/if}} --}}
+            {{!-- <a href="{{url}}" class="author-info-social-feature">我的专栏</a> --}}
+            <a href="https://github.com/xiaoluoboding" class="author-info-social-github" target="_blank">{{t "Github"}}</a>
+            <a href="http://weibo.com/17064042" class="author-info-social-weibo" target="_blank">{{t "Weibo"}}</a>
+            <a href="https://segmentfault.com/u/xlbd" class="author-info-social-sf" target="_blank">SegmentFault</a>
+            <a href="https://juejin.im/user/5624b5fa60b296e5979b7284/posts" class="author-info-social-jj" target="_blank">掘金专栏</a>
+        </section>
+        {{/primary_author}}
+    </section>
+</figure>
+>>>>>>> upstream/master

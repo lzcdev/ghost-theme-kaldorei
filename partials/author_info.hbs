@@ -5,9 +5,15 @@
         <div class="widget-profile-header">
             <a class="widget-profile-logo" href="{{url}}">
             {{#if profile_image}}
+<<<<<<< HEAD
                 <img src="{{img_url profile_image}}" alt="{{@blog.title}}" />
             {{else}}
                 <img src="{{asset "img/user-image.png"}}" alt="{{@blog.title}}" />
+=======
+                <img src="{{img_url profile_image}}" alt="{{@site.title}}" />
+            {{else}}
+                <img src="{{asset "img/user-image.png"}}" alt="{{@site.title}}" />
+>>>>>>> upstream/master
             {{/if}}
             </a>
         </div>
@@ -17,7 +23,11 @@
             {{#if bio}}
                 {{bio}}
             {{else}}
+<<<<<<< HEAD
                 <em><a href="{{@blog.url}}/ghost/team/{{slug}}/">(添加签名档)</a></em>
+=======
+                <em><a href="{{@site.url}}/ghost/team/{{slug}}/">(添加签名档)</a></em>
+>>>>>>> upstream/master
             {{/if}}
         </p>
         <hr>

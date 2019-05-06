@@ -6,16 +6,7 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header">
-    <nav class="container main-nav clearfix">
-        <div class="main-nav__brand">
-            <a class="blog-title" href="{{@blog.url}}">{{@blog.title}}</a>
-        </div>
-        {{#if @blog.navigation}}
-            {{navigation}}
-        {{/if}}
-    </nav>
-</header>
+{{> "header"}}
 
 <main id="container" class="container" role="main">
     <div id="content" class="content col-sm-12 col-md-8 col-lg-8">
@@ -32,10 +23,18 @@
                         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date timeago="ture"}}</time>
                         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">({{date format="YYYY-MM-DD"}})</time>
                     </span>
+<<<<<<< HEAD
+=======
+                    {{#if tags}}
+>>>>>>> upstream/master
                     <span class="post-meta-item post-meta-tags">
                         <i class="fa fa-tag"></i>
                         {{tags}}
                     </span>
+<<<<<<< HEAD
+=======
+                    {{/if}}
+>>>>>>> upstream/master
                     <span class="post-meta-item pull-right">
 
                     </span>

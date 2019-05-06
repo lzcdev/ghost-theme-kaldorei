@@ -15,11 +15,14 @@
 
         $(".scroll-down").arctic_scroll();
 
+<<<<<<< HEAD
         $(".menu-button, .nav-cover, .nav-close").on("click", function(e) {
             e.preventDefault();
             $("body").toggleClass("nav-opened nav-closed");
         });
 
+=======
+>>>>>>> upstream/master
         $(window).scroll(function() {
             var scrollerToTop = $('.back-top');
             var scrollerTOC = $('.widget-toc');
@@ -84,13 +87,19 @@
             // set target to anchor's "href" attribute
             // Thanks to @https://github.com/xiongchengqing fixed this bug.
             var target = document.getElementById($(this).attr('href').split('#')[1]);
+<<<<<<< HEAD
             // console.log(target);
+=======
+>>>>>>> upstream/master
             // scroll to each target
             $(target).velocity('scroll', {
                 duration: 500,
                 offset: -8,
                 easing: 'ease-in-out'
+<<<<<<< HEAD
                 //easing: 'spring'
+=======
+>>>>>>> upstream/master
             });
         });
 
@@ -108,7 +117,11 @@
         });
 
         // add archives year
+<<<<<<< HEAD
         var yearArray = new Array();
+=======
+        var yearArray = [];
+>>>>>>> upstream/master
         $(".archives-item").each(function() {
             var archivesYear = $(this).attr("date");
             yearArray.push(archivesYear);
@@ -121,6 +134,31 @@
                 "</div></div>";
             $("[date='" + uniqueYear[i] + "']:first").before(html);
         }
+<<<<<<< HEAD
+=======
+        
+        // global search
+        if (typeof searchSettings === "undefined") {
+            window.searchSettings = {};
+        }
+        if (searchSettings && searchSettings.key && searchSettings.host) {
+            $(".search-toggle").css("display", "block");
+            $("#globalSearch").on("touchdown click", function () {
+                var searchIconEl = $('.search-icon');
+                if (searchIconEl.hasClass("fa-search")) {
+                    searchIconEl.removeClass("fa-search").addClass('fa-times');
+                } else {
+                    searchIconEl.removeClass('fa-times').addClass("fa-search");
+                }
+                $("body").toggleClass("is-search");
+                $(".site-search").toggleClass("is-hidden");
+            });
+            var ghostSearch = new GhostSearch({
+                key: searchSettings.key,
+                host: searchSettings.host
+            })
+        }
+>>>>>>> upstream/master
     });
 
     // Arctic Scroll by Paul Adam Davis
@@ -175,9 +213,18 @@ function scrollToTop(name, speed) {
     }
 }
 
+<<<<<<< HEAD
 function dynamicInjectHljsStyle() {
     const $link = $('<link rel="stylesheet">')
     console.log($link)
     const href = `/assets/plugins/prism-latest/styles/okaidia.css`
     $link.appendTo('head').attr({ href })
 }
+=======
+// function dynamicInjectHljsStyle() {
+//     const $link = $('<link rel="stylesheet">')
+//     console.log($link)
+//     const href = `/assets/plugins/prism-latest/styles/okaidia.css`
+//     $link.appendTo('head').attr({ href })
+// }
+>>>>>>> upstream/master
