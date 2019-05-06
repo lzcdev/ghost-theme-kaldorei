@@ -15,14 +15,6 @@
 
         $(".scroll-down").arctic_scroll();
 
-<<<<<<< HEAD
-        $(".menu-button, .nav-cover, .nav-close").on("click", function(e) {
-            e.preventDefault();
-            $("body").toggleClass("nav-opened nav-closed");
-        });
-
-=======
->>>>>>> upstream/master
         $(window).scroll(function() {
             var scrollerToTop = $('.back-top');
             var scrollerTOC = $('.widget-toc');
@@ -87,19 +79,12 @@
             // set target to anchor's "href" attribute
             // Thanks to @https://github.com/xiongchengqing fixed this bug.
             var target = document.getElementById($(this).attr('href').split('#')[1]);
-<<<<<<< HEAD
-            // console.log(target);
-=======
->>>>>>> upstream/master
+
             // scroll to each target
             $(target).velocity('scroll', {
                 duration: 500,
                 offset: -8,
                 easing: 'ease-in-out'
-<<<<<<< HEAD
-                //easing: 'spring'
-=======
->>>>>>> upstream/master
             });
         });
 
@@ -117,11 +102,8 @@
         });
 
         // add archives year
-<<<<<<< HEAD
-        var yearArray = new Array();
-=======
+
         var yearArray = [];
->>>>>>> upstream/master
         $(".archives-item").each(function() {
             var archivesYear = $(this).attr("date");
             yearArray.push(archivesYear);
@@ -134,8 +116,7 @@
                 "</div></div>";
             $("[date='" + uniqueYear[i] + "']:first").before(html);
         }
-<<<<<<< HEAD
-=======
+
         
         // global search
         if (typeof searchSettings === "undefined") {
@@ -158,7 +139,6 @@
                 host: searchSettings.host
             })
         }
->>>>>>> upstream/master
     });
 
     // Arctic Scroll by Paul Adam Davis
@@ -213,18 +193,4 @@ function scrollToTop(name, speed) {
     }
 }
 
-<<<<<<< HEAD
-function dynamicInjectHljsStyle() {
-    const $link = $('<link rel="stylesheet">')
-    console.log($link)
-    const href = `/assets/plugins/prism-latest/styles/okaidia.css`
-    $link.appendTo('head').attr({ href })
-}
-=======
-// function dynamicInjectHljsStyle() {
-//     const $link = $('<link rel="stylesheet">')
-//     console.log($link)
-//     const href = `/assets/plugins/prism-latest/styles/okaidia.css`
-//     $link.appendTo('head').attr({ href })
-// }
->>>>>>> upstream/master
+
