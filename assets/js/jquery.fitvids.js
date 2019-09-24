@@ -1,4 +1,3 @@
-
 /*jshint browser:true */
 /*!
 * FitVids 1.3
@@ -30,7 +29,6 @@
       head.appendChild(div.childNodes[1]);
     }
 
-
     if (options) {
       $.extend(settings, options);
     }
@@ -48,7 +46,6 @@
       if (settings.customSelector) {
         selectors.push(settings.customSelector);
       }
-
 
       var ignoreList = '.fitvidsignore';
 
@@ -79,16 +76,13 @@
           $.fn.fitVids._count++;
         }
         $this.wrap('<div class="fluid-width-video-container"><div class="fluid-width-video-wrapper"></div></div>').parent('.fluid-width-video-wrapper').css('padding-top', (aspectRatio * 100) + '%');
-
         $this.removeAttr('height').removeAttr('width');
       });
     });
   };
-
 
   // Internal counter for unique video names.
   $.fn.fitVids._count = 0;
 
   // Works with either jQuery or Zepto
 })(window.jQuery || window.Zepto);
-

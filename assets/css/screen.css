@@ -4,6 +4,7 @@
 
 
 /*
+
     0.  Variables
     1.  Normalize
     2.  General
@@ -31,6 +32,7 @@
     24. Fancybox Setting
     25. Koenig Styles in Ghost 2.x
     26. Search
+
 */
 
 /* ==========================================================================
@@ -1164,13 +1166,22 @@ margin on the iframe, cause it breaks stuff. */
     padding: 1rem 15px;
     line-height: 1.75em;
     color: #BBC7CC;
-    background: var(--font-color);
-    border-top: 4px solid var(--primary-color);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
+    /* border-top: 4px solid var(--primary-color); */
 }
-.site-footer a {
-    color: #BBC7CC;
-    text-decoration: none;
-    font-weight: bold;
+.site-footer .site-footer-title {
+    color: #2B2F33;
+}
+.site-footer-title a {
+    color: var(--primary-light-hover);
+    /* text-decoration: underline; */
+    font-weight: 500;
+    
 }
 .site-footer a:hover {
     color: var(--primary-color);
@@ -1378,10 +1389,11 @@ margin on the iframe, cause it breaks stuff. */
 .widget-profile-header {
     text-align: center;
     margin: -50px auto auto;
+    margin-top: 1rem;
 }
 .widget-profile-header > a > img {
-    width: 10rem;
-    border: 5px solid #fff;
+    width: 15rem;
+    border: 1px solid #fff;
     border-radius: 100%;
     background: #fff;
     background-size: cover;
@@ -1410,7 +1422,7 @@ margin on the iframe, cause it breaks stuff. */
 .widget-profile-cover.overlay, .widget-profile-cover.no-cover {
     background: var(--font-color);
     background-position: center center;
-    height: 100px;
+    height: 30rem;
 }
 .widget-profile-desc {
     padding: 0px 20px;

@@ -79,7 +79,6 @@
             // set target to anchor's "href" attribute
             // Thanks to @https://github.com/xiongchengqing fixed this bug.
             var target = document.getElementById($(this).attr('href').split('#')[1]);
-
             // scroll to each target
             $(target).velocity('scroll', {
                 duration: 500,
@@ -102,7 +101,6 @@
         });
 
         // add archives year
-
         var yearArray = [];
         $(".archives-item").each(function() {
             var archivesYear = $(this).attr("date");
@@ -116,7 +114,6 @@
                 "</div></div>";
             $("[date='" + uniqueYear[i] + "']:first").before(html);
         }
-
         
         // global search
         if (typeof searchSettings === "undefined") {
@@ -193,4 +190,9 @@ function scrollToTop(name, speed) {
     }
 }
 
-
+// function dynamicInjectHljsStyle() {
+//     const $link = $('<link rel="stylesheet">')
+//     console.log($link)
+//     const href = `/assets/plugins/prism-latest/styles/okaidia.css`
+//     $link.appendTo('head').attr({ href })
+// }

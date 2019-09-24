@@ -46,10 +46,9 @@
   "Read": "Read",
   "more posts": "more posts",
   "by this author": "by this author",
-<<<<<<< HEAD
-  "toc": "Table of contents"
-=======
   "toc": "Table of contents",
-  "Search": "Search"
->>>>>>> upstream/master
+  "Search": "Search",
+  "DAYS AGO": "DAYS AGO",
+  "MONTHS AGO": "MONTHS AGO",
+  "YEAR AGO": "YEAR AGO"
 }
