@@ -1420,7 +1420,7 @@ margin on the iframe, cause it breaks stuff. */
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 .widget-profile-cover.overlay, .widget-profile-cover.no-cover {
-    background: var(--font-color);
+    background: #000;
     background-position: center center;
     height: 30rem;
 }

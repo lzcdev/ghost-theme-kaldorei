@@ -7,6 +7,7 @@
 
   .nav-items {
     display: flex;
+    z-index: 1000;
   }
 
   .blog-title {
@@ -25,16 +26,18 @@
   .nav-item {
     color: #fff;
     margin: 1rem;
+
   }
 
   .nav-item a {
     color: #fff;
     font-size: 2rem;
     text-decoration: none;
+    z-index: 1000;
   }
 
   .nav-item a:hover {
-    color: bisque;
+    color: var(--primary-light-hover);
   }
 
   .widget-profile-desc {
@@ -44,11 +47,28 @@
   }
 </style>
 
+
+
+
+
 <header class="header">
 
-  <div class="widget-profile-cover overlay {{#if @site.cover_image}}"
-    style="background-image: url({{@site.cover_image}}){{else}}no-cover{{/if}}">
+  {{!-- 太阳系动画 --}}
+  <div class='solar-syst'>
+    <div class='sun'></div>
+    <div class='mercury'></div>
+    <div class='venus'></div>
+    <div class='earth'></div>
+    <div class='mars'></div>
+    <div class='jupiter'></div>
+    <div class='saturn'></div>
+    <div class='uranus'></div>
+    <div class='neptune'></div>
+    <div class='pluto'></div>
+    <div class='asteroids-belt'></div>
+  </div>
 
+  <div class="widget-profile-cover overlay">
     <div class="nav-header">
       <div class="blog-title">
         <a class="" href="{{@site.url}}">{{@site.title}}</a>
