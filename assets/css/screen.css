@@ -313,6 +313,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Wraps the main content & footer */
 
 .site-wrapper {
+    /* height: 100%; */
     position: relative;
     z-index: 10;
     min-height: 100%;
@@ -1387,12 +1388,15 @@ margin on the iframe, cause it breaks stuff. */
     left: 120px;
 }
 .widget-profile-header {
-    text-align: center;
-    margin: -50px auto auto;
-    margin-top: 1rem;
+    /* text-align: center;
+    margin: -50px auto auto; */
+    /* margin-top: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .widget-profile-header > a > img {
-    width: 15rem;
+    width: 5rem;
     border: 1px solid #fff;
     border-radius: 100%;
     background: #fff;
@@ -1420,9 +1424,10 @@ margin on the iframe, cause it breaks stuff. */
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 .widget-profile-cover.overlay, .widget-profile-cover.no-cover {
-    background: #000;
+    background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
     background-position: center center;
     height: 30rem;
+
 }
 .widget-profile-desc {
     padding: 0px 20px;
